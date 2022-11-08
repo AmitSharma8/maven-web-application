@@ -93,19 +93,16 @@
 	</dependencies>
 	
 	<distributionManagement>
-	
 	    <repository>
-	      <id>nexus</id>
-	      <name>Amit Releases Nexus Repository</name>
-	      <url>http://35.202.26.151:8081/repository/amit-release/</url>
+	         <id>nexus</id>
+	         <name>Amit Releases Nexus Repository</name>
+	         <url>http://35.202.26.151:8081/repository/amit-release/</url>
 	    </repository>
-	    
 	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Amit Snapshot Nexus Repository </name>
-	      <url>http://35.202.26.151:8081/repository/amit-snapshot/</url>
-	    </snapshotRepository>
-	    
+	          <id>nexus</id>
+	          <name>Amit Snapshot Nexus Repository </name>
+	          <url>http://35.202.26.151:8081/repository/amit-snapshot/</url>
+	    </snapshotRepository>	    
 	</distributionManagement>
 	
 	<build>
