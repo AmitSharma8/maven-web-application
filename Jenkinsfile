@@ -29,6 +29,11 @@ stages{
   sh  "mvn clean package"
   }
   }
+  stage('successfull'){
+	  steps{
+		  echo "build is successfull"
+	  }
+  }
 /*
  stage('ExecuteSonarQubeReport'){
   steps{
