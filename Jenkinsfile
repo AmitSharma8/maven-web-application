@@ -3,9 +3,7 @@ pipeline {
  //  agent { label 'slave1' }    //job will run only on agent having tag 'slave1'
  //  agent { label 'docker && slave1'}
      agent {label 'docker || slave1'}
-     triggers{
-     pollSCM('* * * * *')
-             }
+     triggers { pollSCM('* * * * *') }
      stages {
        stage('Build') {steps {echo 'Building is done'}}
        stage('Test') {steps {echo 'Testing is done'}}
