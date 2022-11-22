@@ -8,7 +8,7 @@ pipeline {
        stage('Build') {
           steps {
              echo 'Building is done'
-             echo "Running build no. ${env.BUILD_ID} on ${env.JENKINS_URL}"
+             echo "Running build no. ${env.BUILD_ID} on ${env.JENKINS_URL}"  // Printing build no. and Jenkins URL
          }
        }
        stage('Test') {steps {echo 'Testing is done'}}
