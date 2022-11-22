@@ -23,7 +23,7 @@ stages{
 	
 	}
   }
-  stage('successfull'){
+  stage('successfull-1'){
 	  steps{ echo "build is successfull"}
   }
   stage('Build'){
