@@ -23,7 +23,9 @@ stages{
 	
 	}
   }
-  
+  stage('successfull'){
+	  steps{ echo "build is successfull"}
+  }
   stage('Build'){
   steps{
   sh  "mvn clean package"
