@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { label 'slave1' }
   stages {
     stage('Build') {steps {echo 'Building is done'}}
     stage('Test') {steps {echo 'Testing is done'}}
