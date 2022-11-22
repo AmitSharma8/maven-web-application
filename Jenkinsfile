@@ -4,7 +4,6 @@ agent any
 
 tools{
 maven 'maven3.8.2'
-
 }
 
 triggers{
@@ -63,10 +62,10 @@ post{
  }
  
  failure{
- emailext to: 'devopstrainingblr@gmail.com,mithuntechnologies@yahoo.com',
+ emailext to: '47amitsharma@gmail.com,mithuntechnologies@yahoo.com',
           subject: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
           body: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
-          replyTo: 'devopstrainingblr@gmail.com'
+          replyTo: '47amitsharma@gmail.com'
  }
  
 }
